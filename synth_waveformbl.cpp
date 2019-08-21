@@ -116,7 +116,7 @@ void AudioSynthWaveformBL::amplitude (float _amp) {
 	amp = _amp;
 }
 
-void AudioSynthWaveformBL::pulsewidth (float _pw) {
+void AudioSynthWaveformBL::pulseWidth (float _pw) {
 	pw = _pw;
 }
 
