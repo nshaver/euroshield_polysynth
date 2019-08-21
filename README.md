@@ -23,3 +23,13 @@ There are only two waveforms implemented. The stock Teensy waveforms alias prett
 Credit goes here for the band-limited sawtooth: https://github.com/silveirago/teensyATK
 I took their work and modified it a little to be more like the stock Teensy waveform class.
 I attempted to create a square wave that does a little sloping at the edges in an attempt to reduce its aliasing. I don't really know if I did any good at that or not. Nevertheless, it works.
+
+Regarding the class AudioSynthWaveformBL, 
+
+add synth_waveformbl to Audio.h, which lives in somewhere like:
+
+arduino-1.8.9/hardware/teensy/avr/libraries/Audio/Audio.h
+
+copy synth_waveformbl.h and synth_waveformbl.cpp into that same directory.
+
+Then you can use synth_waveformbl exactly as you would have normally used synth_waveform.
